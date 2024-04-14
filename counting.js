@@ -13,8 +13,7 @@ for (let i = 1; i < arr.length; i++) {
 /* create counts array with index 0, 1, ..., largest */
 const counts = Array(largest + 1).fill(0);
 for (let i = 0; i < arr.length; i++) {
-	const num = arr[i];
-	counts[num] = counts[num] + 1;
+	counts[arr[i]]++;
 }
 
 /* create sorted arrray */
